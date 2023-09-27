@@ -10,8 +10,13 @@ public class UserMapper implements RowMapper<UserBean> {
 
 	@Override
 	public UserBean mapRow(ResultSet rs, int rowNum) throws SQLException {
-		// TODO Auto-generated method stub
-		return null;
+
+		UserBean user = new UserBean();
+		user.setFirstName(rs.getString("first_name"));
+		user.setLastName(rs.getString("last_name"));
+		user.setUsername(rs.getString("username"));
+		user.setPassword(rs.getString("password"));
+		return user;
 	}
 
 }
