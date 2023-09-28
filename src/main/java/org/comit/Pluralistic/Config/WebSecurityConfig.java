@@ -9,7 +9,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
-/*@Configuration
+@Configuration
 @EnableWebSecurity
 public class WebSecurityConfig {
 
@@ -30,5 +30,6 @@ public class WebSecurityConfig {
 	PasswordEncoder passwordEncoder() {
 		// return new Cu stomPasswordEncoder();
 		return new BCryptPasswordEncoder();
-	}
-}*/
+
+}
+}

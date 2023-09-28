@@ -18,6 +18,15 @@ public class UserDAO {
 		return this.jdbcTemplate.queryForObject(sql, new UserMapper(), username);
 	}
 
+	// Create User
+	public void createUser(UserBean user) {
+
+		String sql_createUser = "insert into user values(?,?,?,?)";
+
+		this.jdbcTemplate.update(sql_createUser, user.getUsername(), user.getFirstName(), user.getLastName(),
+				user.getPassword());
+	}
+
 }
 
 
