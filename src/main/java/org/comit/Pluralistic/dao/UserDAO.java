@@ -23,7 +23,7 @@ public class UserDAO {
 
 		String sql_createUser = "insert into user values(?,?,?,?)";
 
-		this.jdbcTemplate.update(sql_createUser, user.getUsername(), user.getFirstName(), user.getLastName(),
+		this.jdbcTemplate.update(sql_createUser,  user.getFirstName(), user.getLastName(), user.getUsername(),
 				user.getPassword());
 	}
 

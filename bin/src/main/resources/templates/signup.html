@@ -7,7 +7,7 @@
 </head>
 
 <div>
-	<form class="form-signin" action="/create" method="post">
+	<form class="form-signin" method="post">
 		<p> <label for="inputFirstname" class="col-sm-4 col-form-label">Firstname</label>
 			<input type="text" class="form-control" id="inputFirstname" name="first" required>
 		</p>
@@ -28,7 +28,10 @@
 			<input type="password" class="form-control" id="inputPassword" name="password" required>
 		</p>
 
+		<p><label for="inputDOB" class="col-sm-4 col-form-label">DOB</label>
 
+			<input type="date" class="datePad" size="20" name="birth" required>
+		</p>
 
 		<p>
 			<label>Already a member?</label>
